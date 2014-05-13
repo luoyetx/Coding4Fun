@@ -1,4 +1,4 @@
-class Solution:
+class Solution(object):
   # @param n, an integer
   # @return an integer
   def climbStairs(self, n):

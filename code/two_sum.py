@@ -1,4 +1,4 @@
-class Solution:
+class Solution(object):
   # @return a tuple, (index1, index2)
   def twoSum(self, num, target):
     numWithIndex = [[o, i] for i, o in enumerate(num)]
