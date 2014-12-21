@@ -56,3 +56,6 @@ docs/_build/
 *.o
 *.obj
 *.exe
+
+# Java stuff
+*.class
