@@ -59,3 +59,6 @@ docs/_build/
 
 # Java stuff
 *.class
+
+# gcc output
+a.out
