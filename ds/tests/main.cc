@@ -1,6 +1,6 @@
-#include "stack.h"
+#include "skiplist.h"
 
 int main(int argc, char *argv[]) {
-  ds::Stack<int> s;
+  ds::TestSkipList();
   return 0;
 }
