@@ -76,8 +76,7 @@ public:
       level_ = node_level;
     }
     // update
-    int level_to_go = std::min(level_, node_level);
-    for (int i = 0; i < level_to_go; i++) {
+    for (int i = 0; i < node_level; i++) {
       x->forward[i] = update[i]->forward[i];
       update[i]->forward[i] = x;
     }
@@ -97,8 +96,8 @@ public:
     x = x->forward[0];
     if (x && x->key == key) {
       // find it
-      const int level_to_go = std::min<int>(x->forward.size(), level_);
-      for (int i = 0; i < level_to_go; i++) {
+      int nodel_level = x->forward.size();
+      for (int i = 0; i < nodel_level; i++) {
         update[i]->forward[i] = x->forward[i];
       }
       DeleteNode(x);
