@@ -62,3 +62,5 @@ docs/_build/
 
 # gcc output
 a.out
+
+.vscode
